@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control-sm{
+    height: 30px;
+    width: 400px;
+}

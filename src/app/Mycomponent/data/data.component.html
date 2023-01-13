@@ -1,0 +1,28 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Employee Id</th>
+        <th scope="col">Company Id</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">1</th>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.cid}}</td>
+      </tr>
+  </table>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)= "searchId"]>
+        <button class="btn btn-outline-success" type="submit" (click)="getUserById(id)">Search By Id</button>
+      </form>
+    </div>
+  </nav>
+  <button type="button" class="btn btn-dark" (click)="getUser()">Get All Data</button><br>
+ 
+  
